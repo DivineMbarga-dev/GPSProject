@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Géolocalisation des véhicules</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script>
+      function afficherMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 7.369722, lng: 12.354722},
+          zoom: 12
+        });
+      }
+    </script>
+  </head>
+  <body onload="afficherMap()">
+    <div id="map" style="height: 500px; width: 100%;"></div>
+  </body>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHrBjkP481Ih6lZMwRAXF5MRXZrEaRZkc&callback=afficherMap"></script>
+</html>
